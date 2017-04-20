@@ -1,0 +1,85 @@
+
+.header1Style{
+	text-align: center;
+	text-decoration: underline;
+
+}
+.header2Style {
+	font-family: Helvetica;
+	font-size: 20px;
+	font-style: bold;
+	text-align: center; 
+
+ }
+
+.bio{
+	font-family: helvetica;
+	text-align: center;
+
+}
+
+.allPictures {
+	background-size: 100% 100%;
+	display: block;
+	border: 5px solid black;
+	height:500px;
+	margin: 0 auto;
+
+}
+
+.firstPicture {
+	background-image: url("http://i0.kym-cdn.com/entries/icons/original/000/021/807/4d7.png");
+	width:500px;
+
+}
+
+.secondPicture {
+	background-image: url("https://www.planet-source-code.com/vb/2010Redesign/images/LangugeHomePages/HTML5_CSS_JavaScript.png");
+	width:100%;
+
+}
+
+ .contactStyle {
+	text-align: center;
+	color: black;
+	text-decoration: underline;
+
+}
+
+.contactStyle:hover {
+	color: red;
+	transition: all 1s;
+
+}
+
+/* For Tablets and small desktop */
+@media all and (min-width: 768px) and (max-width: 979px){
+	.allPictures{
+		float:left;
+
+	}
+	.header2Style {
+		display: none;
+
+		}
+
+}
+/* The page seems fine after changing width in .secondPicture  in class but I added some things*/
+@media all and (max-width:767px) {
+	.firstPicture{
+		width: 100%;
+
+
+	}
+
+
+}
+
+/* For smaller phone and phone in portrait mode */ 
+@media all and (max-width: 480px){
+	.allPictures{
+		width: 200px;
+		height:200px;
+	}
+
+}
